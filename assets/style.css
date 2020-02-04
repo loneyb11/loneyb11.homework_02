@@ -1,4 +1,147 @@
-.body{font-family: 'Montserrat', sans-serif;
-
+html, body
+{
+    background-attachment: fixed;
+    background-image: url(img/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
-
+p
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0;
+}
+/*<----Navigation---->*/
+.navbar
+{   
+    background-color: white;
+    border-bottom: solid 2px #cccccc;
+    flex-flow: wrap;
+    margin-bottom: 0;
+    padding: 0;
+}
+.navbar-nav
+{
+    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-left: auto;
+}
+.navbar-brand
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color:  rgb(89, 170, 165);
+    color:#fff;
+    font-size: 2rem;
+    margin-left: 30px;
+    margin-right: 0;
+    padding: 10px;
+}
+.navbar-brand:hover
+{
+    
+    color:#fff;
+}
+.nav-item
+{
+    padding: 0 10px;
+}
+.nav-link
+{
+    color: #999;
+    font-size: 1rem;
+    padding: 0;
+}
+.nav-link:hover
+{
+    color: #b4b4b4;
+}
+.nav-spacer
+{
+    border-right: solid 1px #efefef;
+}
+#content
+{
+    flex: 1 0 auto;
+}
+/*<----Main Content Card--->*/
+.card
+{
+    margin: 30px auto 30px 30px;
+    width: 700px;
+}
+.card-title
+{
+    border-bottom: solid 2px #dddddd;
+    color: #59aaa5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+/*<----Footer---->*/
+#footer
+{
+    background-color: #666666;
+    border-top: solid 6px #59aaa5;
+    flex-shrink: none;
+    text-align: center;
+    width: 100%;
+}
+.footer-text
+{
+    color: #b4b4b4;
+    font-size: .8rem;
+    margin: 0;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+/*<----Media Queries---->*/
+@media(max-width:768px)
+{
+    .navbar-brand
+    {
+        margin-left:15px;
+    }
+    .navbar-nav
+    {
+        flex-direction: row;
+        padding-bottom: 12px;
+        padding-right: 0px;
+        padding-top: 12px;
+    }
+    /*<----Main Content Card--->*/
+    .card
+    {
+        margin: 30px auto 0px auto;
+        width: 90%; 
+    }
+}
+@media(max-width:669px)
+{
+    /*<----Navigation---->*/
+    .navbar-brand
+    {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-nav
+    {
+        flex-direction: row;
+        margin: auto;
+        padding-bottom: 12px;
+        padding-right: 0px;
+        padding-top: 12px;
+    }
+    /*<----Main Content Card--->*/
+    .card
+    {
+        margin: 30px auto 30px auto;
+        width: 90%;
+    }
+}
